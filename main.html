@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="AnimatedBooks/book.css">
+    <script src="AnimatedBooks/modernizr.custom.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="/"><img src="images/logo1.png"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="header_text">
+                    Осталось <span>08</span> печатных руководств
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button class="btn_custom pull-right" data-toggle="modal" data-target="#orderSuccess">Получить руководство</button>
+                <div class="arrow_up arrow_white"><div class="arrow_text">это займет 1,5 минуты</div></div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="modal fade" id="toOrder" tabindex="-1" role="dialog" aria-labelledby="toOrderLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="img_text_block"><div class="img_text">Оформить заказ</div></div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
+            <form>
+                <div class="pull-left">
+                    <div class="form-group">
+                        <label class="form-control-label" for="name">ФИО</label>
+                        <input type="text" class="form-control" id="name" required name="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="company">Компания</label>
+                        <input type="text" class="form-control" id="company" required name="company">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="position">Должность</label>
+                        <input type="text" class="form-control" id="position" required name="position">
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <div class="form-group">
+                        <label class="form-control-label" for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" required name="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="phone">Телефон</label>
+                        <input type="text" class="form-control" id="phone" required name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Формат</label>
+                        <div class="form-control choose">
+                            <div class="pull-left option"><div class="option-info">i</div>Электронный</div>
+                            <div class="pull-right option chosen"><div class="option-info">i</div>Печатный</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center clearfix">
+                    <button type="button" class="btn_custom">Получить руководство</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="orderSuccess" tabindex="-1" role="dialog" aria-labelledby="orderSuccessLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#10005;</span></button>
+            <h2>Спасибо! Все получилось</h2>
+            <p>
+                Вы можете скачать руководство, нажав на соответствующую кнопку ниже. На всякий случай мы
+                отправили ссылку на руководство вам на почту.
+            </p>
+            <button type="button" class="btn_custom">Скачать руководство</button>
+        </div>
+    </div>
+</div>
+<section class="section1">
+    <div class="container">
+        <div class="row custom-flex">
+            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6">
+                <figure class='book'>
+                    <div class="arrow_up arrow_black"><div class="arrow_text">ознакомиться с содержанием</div></div>
+                    <!-- Front -->
+                    <ul class='hardcover_front'>
+                        <li>
+                            <img src="" alt="" width="100%" height="100%">
+                        </li>
+                        <li></li>
+                    </ul>
+                    <!-- Pages -->
+                    <ul class='page'>
+                        <li></li>
+                        <li>
+                            <a class="btn_book" href="#">Download</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- Back -->
+                    <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </figure>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h1>КАК ЗАЩИТИТЬ РУКОВОДИТЕЛЯ ОТ ОТВЕТСТВЕННОСТИ ЗА УБЫТКИ КОМПАНИИ?</h1>
+                <p>
+                    Вы узнаете, как именно нужно действовать при принятии тех или иных решений, чтобы минимизировать
+                    риск привлечения к ответственности.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section2">
+    <div class="container">
+        <div class="row custom-flex">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>Если вы:</h2>
+                <ul>
+                    <li>Генеральный директор</li>
+                    <li>Член правления или совета директоров</li>
+                    <li>Топ-менеджер</li>
+                </ul>
+                <p>
+                    Руководство «Как защитить руководителя от ответственности за убытки компании?» должно быть всегда под рукой.
+                </p>
+                <button class="btn_custom">Получить руководство</button>
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6">
+                <div class="img_wrapper">
+                    <div class="img_text_block"><div class="img_text">Для кого?</div></div>
+                    <img src="images/img1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section3">
+    <div class="container">
+        <div class="row custom-flex">
+            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6">
+                <div class="img_wrapper">
+                    <div class="img_text_block"><div class="img_text">в чЁм уникальность?</div></div>
+                    <img src="images/img2.png">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2>Если вам хотя бы раз приходилось задумываться над вопросами:</h2>
+                <ul>
+                    <li>Есть ли риск привлечения к ответственности руководителя компании при совершении тех или иных действий?</li>
+                    <li>Можно ли избежать этих рисков?</li>
+                    <li>Как построить эффективную систему управления, позволяющую руководителю снять с себя излишние риски по российскому праву?</li>
+                </ul>
+                <button class="btn_custom">Получить руководство</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="section4">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+                <div class="featured_text">
+                    Ответы на эти вопросы вы найдёте в пособии. В нём обобщены и систематизированы требования
+                    законодательства и существующая судебная практика, при этом максимально чётко отображены все
+                    актуальные вопросы и составлено «руководство к действию» для топ-менеджмента.
+                </div>
+            </div>
+            <div class="experts col-lg-11 col-md-11 col-sm-11 pull-right">
+                <div class="img_text_block"><div class="img_text">эксперты</div></div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Михаил<br>Халецкий</div>
+                        Старший юрист, адвокат
+                        <a href="#">Mikhail.khaletsky@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo1.png"></div>
+                </div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Надежда<br>минина</div>
+                        Юрист, адвокат
+                        <a href="#">nadezhda.minina@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo2.png"></div>
+                </div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Александр<br>некторов</div>
+                        Партнёр, адвокат
+                        <a href="#">alexander.nektorov@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo3.png"></div>
+                </div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Виталий<br>Силин</div>
+                        Юрист
+                        <a href="#">vitaly.silin@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo4.png"></div>
+                </div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Никита<br>Калиниченко</div>
+                        Юрист
+                        <a href="#">nikita.kalinichenko@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo5.png"></div>
+                </div>
+                <div class="expert_block">
+                    <div class="expert_text">
+                        <div class="arrow_down"></div>
+                        <div class="expert_name">Константин<br>Галин</div>
+                        Эксперт
+                        <a href="#">konstantin.galin@nsplaw.com</a>
+                    </div>
+                    <div class="expert_img"><img src="images/photo6.png"></div>
+                </div>
+            </div>
+            <div class="partner text-left col-lg-4 col-md-4 col-sm-4">
+                <img src="images/logo3.png">
+                <span>ПРИ поддержке<br>клуба независимых<br>директоров сколково</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12">
+                <div class="donate_text">
+                    Чтобы получить руководство, достаточно сделать взнос в благотворительный фонд «Подари жизнь»
+                </div>
+            </div>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+                <div class="row custom-flex-justify">
+                    <div class="donate_block col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="donate_sum">100</div>
+                        <span>рублей</span>
+                        <button class="btn_custom">ПЕРЕЧИСЛИТЬ</button>
+                    </div>
+                    <div class="donate_block col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="donate_sum">500</div>
+                        <span>рублей</span>
+                        <button class="btn_custom">ПЕРЕЧИСЛИТЬ</button>
+                    </div>
+                    <div class="donate_block col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="donate_sum">1000</div>
+                        <span>рублей</span>
+                        <button class="btn_custom">ПЕРЕЧИСЛИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+                <div class="row custom-flex-justify">
+                    <div class="partner_block col-lg-3 col-md-3 col-sm-3 col-xs-12"><img src="images/logo1.png"></div>
+                    <div class="partner_block col-lg-3 col-md-3 col-sm-3 col-xs-12"><img src="images/logo2.png"></div>
+                    <div class="partner_block col-lg-3 col-md-3 col-sm-3 col-xs-12"><img src="images/logo3-1.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offer col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <div class="offer_img"></div>
+                <h2>Вам также может быть интересно Руководство «Крупные сделки и сделки с заинтересованностью. Как заключать?»</h2>
+                <p>
+                    В нём вы найдете систематизированные требования и ключевые аспекты законодательства
+                    к крупным сделкам и сделкам с заинтересованностью.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                © Nektorov, Saveliev & Partners © 2006-2017
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
